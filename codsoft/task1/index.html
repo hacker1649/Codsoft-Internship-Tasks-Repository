@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eec1a5db58.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!--header section implementation-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="logo">P</span>ortfolio.</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-txt">
+                <h1>Hi, I'm <span class="name">Muhammad</span> Warzan.</h1>
+                <p>I am a passionate <span id="element"></span></p>
+                <span class="intro">
+                    <p>Hello there! I'm a passionate 20-year-old with a flair for creativity and a love for design. As a budding software developer, mobile application developer, and front-end web developer, I find joy in bringing ideas to life and creating meaningful, user-friendly and eye-catching experiences through digital mediums. Join me on this exhilarating adventure as I strive to make the world a more beautiful and functional place, one design at a time.</p>
+                    <a href="resume.pdf" target="_blank"> Download Resume</a>
+                    <a href="#contact">Contact Me</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--about section implementation-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/dark.jpg">
+                </div>
+                <div class="col-2">
+                    <h1>About Me</h1>
+                    <p>Hello there!<br>This is Muhammad Warzan.<br>I am currently pursuing my Bachelor's Degree in Computer Science from FAST-NUCES with a strong desire to advance my abilities in the information technology sector so that I may compete in the expanding market.<br>With every pixel and line of code, I strive to create digital masterpieces that leave lasting impressions. But my journey has only just begun! Looking ahead, I am eager to embark on a never-ending quest for learning, seeking out new skills, technologies, and ideas to sharpen my craft. I am eager to contribute my skills and enthusiasm to make a positive impact on any organization or project I am involved in. I prefer to concentrate my efforts on identifying areas where I can improve and proactively working on them to become a better version of myself. The future holds endless opportunities, and I'm ready to embrace them all with enthusiasm and open arms. Join me on this exhilarating adventure as I strive to make the world a more beautiful and functional place, one design at a time.<br>I am ready to have new experiences, meet new people, and learn new things every day. I love to connect with people from all backgrounds, so feel free to send me a message.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Mobile Application Development</span><br>Have the art of developing user-friendly applications both on Android and iOS <br>I used the most popular framework for mobile apps i.e. Flutter Framework, It uses Dart Programming Language (an object oriented programming language) <br>Using Visual Studio Code IDE, Android Studio IDE and an Android Emulator</li>
+                            <li><span>Front-end Web Development</span><br>Have the art of developing user-friendly front-end website design <br>I am skilled in basic web development techniques i.e. HTML5, CSS3, Bootstrap, JavaScript, jQuery and WordPress</li>
+                            <li><span>Creative Designing</span><br>Have the art of designing youtube thumbnails, and different photo-manipulations <br>I know about Photoshop, Illustrator, Canva and other online AI tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>10<sup>th</sup> August 2023 - Present </span><br>Front-end Web Development Intern at <a href="https://www.codsoft.in/" target="_blank" class="link">Codsoft</a>. <br>CODSOFT is a vibrant and diverse community that brings together individuals with similar objectives and ultimate goals. Our main focus is on creating opportunities that span various areas, including leadership development, learning, student engagement, and fostering shared interests.</li>
+                            <li><span>5<sup>th</sup> June 2023 - 2<sup>nd</sup> July 2023 </span><br>Front-end Web Development Intern at <a href="https://interns.pk/" target="_blank" class="link">Interns Pakistan</a>. <br>It is an Online Internship Program which will cover a minimum of four weeks, with students starting to learn first and later you will get an opportunity to work on the real-world problem and have fun along the way.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020 - Present</span><br>Bachelor's Degree in Computer Science From <a href="https://nu.edu.pk/" target="_blank" class="link">National University of Computer and Emerging Sciences</a>, Karachi Campus <br>Currently, I am enrolled in 7 <sup>th</sup> Semester </li>
+                            <li><span>2018 - 2020</span><br>Intermediate Degree in Pre-Engineering from <a href="https://youtu.be/AXhmQrvzldg" target="_blank" class="link">Government Dehli College</a>, Hussainabad, Karachi</li>
+                            <li><span>2016 - 2018</span><br>Matriculation Degree in Science from <a href="http://www.shaheen.edu.pk/" target="_blank" class="link">Shaheen Public School and College</a>, Campus I, Karachi</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!--services section implementation-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Mobile app development services are aimed at building iOS & Android applications that effectively complement or substitute web solutions.</p>
+                </div>
+                <div>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <h2>Web Development</h2>
+                    <p>Different types of web solutions may seem similar from the outside but we approach them differently and know what factors are winning in each case.</p>
+                </div>
+                <div>
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <h2>Web Design</h2>
+                    <p>Elevating digital presence through visionary web design: Blending aesthetics and functionality to create captivating online experiences that leave a lasting impact.</p>
+                </div>
+                <div>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <h2>Photo Manipulation</h2>
+                    <p>Elevating visions through expert photo manipulation: Transforming images into captivating artistry, where imagination knows no bounds.</p>
+                </div>
+                <div>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <h2>PosterDesign</h2>
+                    <p>Unleashing creativity through striking poster designs that captivate and inspire, turning ideas into visual masterpieces.</p>
+                </div>
+                <div>
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    <h2>Logo Design</h2>
+                    <p>Crafting brand identities with precision: Transforming concepts into impactful logos that resonate and endure.</p>
+                </div>
+                <div>
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Shaping seamless digital experiences: Bridging aesthetics and functionality through intuitive UI/UX designs that captivate and delight.</p>
+                </div>
+                <div>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <h2>Thumbnail Design</h2>
+                    <p>Empowering content at a glance: Creating compelling thumbnail designs that entice, ensuring your message is seen and embraced.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--projects section implementation-->
+    <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="card">
+                <div class="image">
+                    <img src="images/screening.jpeg">
+                </div>
+                <div class="title">Screening Application Using Flutter</div>
+                <div class="description">
+                    <p>This repository contains a COVID-19 Screening Application which is developed using Flutter Framework. Use this self-assessment tool to help determine whether you need to be tested for COVID-19.</p>
+                    <a href="https://github.com/hacker1649/Screening-Application-Using-Flutter" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/banking.jpg">
+                </div>
+                <div class="title">Basic Banking System Application</div>
+                <div class="description">
+                    <p>this repository leads to Basic Banking System Application which was developed using local SQflite database and Flutter Framework, in which user can easily transfer money from one account to another account.</p>
+                    <a href="https://github.com/hacker1649/Banking-Application-Using-SQflite" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/virus.jpeg">
+                </div>
+                <div class="title">COVID-19 Screening Tool Application</div>
+                <div class="description">
+                    <p>The COVID-19 screening tool is a vital resource in identifying potential cases and reducing the spread of the virus. Considering this, we have developed COVID-19 Screening Tool Application using Bootstarp and jQuery.</p>
+                    <a href="https://github.com/hacker1649/COVID19-Screening-Tool-Application" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/wordpress.jpeg">
+                </div>
+                <div class="title">Code Smashers Website Using Wordpress</div>
+                <div class="description">
+                    <p>Code Smashers is more than just a website, it's a learning platform that empowers individuals to unlock their coding potential. Code Smashers provides a one-stop destination for programmers of all levels.</p>
+                    <a href="https://github.com/hacker1649/Code-Smashers-Website-Using-Wordpress" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/sorting.jpg">
+                </div>
+                <div class="title">Sorting Algorithms Visualizer</div>
+                <div class="description">
+                    <p>The technique to organize data in a specific order is specified by the sorting algorithm. The significance of sorting resides in the fact that, if data is kept in a sorted fashion, data searches may be highly improved.</p>
+                    <a href="https://github.com/hacker1649/Sorting-Algorithms-Visualizer" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/shared.jpeg">
+                </div>
+                <div class="title">Multi Role Based Application Using Shared Preferences</div>
+                <div class="description">
+                    <p>Shared preferences offer an efficient approach for managing user roles, allowing seamless switching between roles and maintaining personalized settings, allowing users to access features effortlessly.</p>
+                    <a href="https://github.com/hacker1649/Multi-Role-Based-Application" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/templates.jpeg">
+                </div>
+                <div class="title">Flutter UI Design Templates</div>
+                <div class="description">
+                    <p>This repository is intended especially for newbies like myself who want to start a brand-new roadmap in Flutter Framework (Dart Language) to develop several software development applications for both Android and iOS.</p>
+                    <a href="https://github.com/hacker1649/Flutter-UI-Projects-Clone" target="_blank">Learn More...</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/web.jpeg">
+                </div>
+                <div class="title">HTML-CSS Basic UI Templates</div>
+                <div class="description">
+                    <p>Every beginner's coding journey in frontend starts with these two basic building blocks i.e. HTML5 and CSS3 and you need to be creative when it comes to designing a beautiful application.</p>
+                    <a href="https://github.com/hacker1649/HTML-CSS-Basic-Projects" target="_blank">Learn More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--contacts section implementation-->
+   <div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+            <div class="contact-left">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter your Email Address" required>
+                    <textarea name="message" rows="6" placeholder="Enter your desired Message"></textarea>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="avatar">
+                    <img src="images/warzan.jpg">
+                </div>
+                <p>I am available for freelance work. I am ready to have new experiences, meet new people, and learn new things every day. I love to connect with people from all backgrounds, so feel free to send me a private message.</p>
+                <div class="contact-icons">
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>muhammad1649programmer@gmail.com</p>
+                    <p><i class="fa fa-whatsapp" aria-hidden="true"></i>+92 333 8777217</p>
+                </div>
+                <div class="social-icons">
+                    <h2 class="follow">Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/muhammad-warzan-13897420a/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/sacrastic_viki/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/muhammad.warzan.92" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/warzan_222555" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/hacker1649" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--footer section implementation-->
+    <footer>
+        <span>Personal Portfolio Website | Created By <a href="https://www.linkedin.com/in/muhammad-warzan-13897420a/" target="_blank">Muhammad Warzan</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer.', 'Mobile Application Developer.', 'Front-end Web Developer.', 'Creative Designer.'],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>

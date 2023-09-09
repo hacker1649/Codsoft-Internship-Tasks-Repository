@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html ::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* header section implementation */
+
+#header {
+    margin-top: 8px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),0%,#00000036,rgba(0, 0, 0, 0.801)),url(images/hacker.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    color: skyblue;
+}
+
+.container {
+    padding: 10px 8%;
+}
+
+nav h1 {
+    font-size: 45px;
+    color: white;
+    filter: drop-shadow(2px 0px 0px skyblue);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: lavender;
+    font-size: 19px;
+    position: relative;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    color: skyblue;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 90%;
+    transform: scale(1.2x);
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(0, 183, 255);
+    color: lavender;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: skyblue;
+}
+
+.header-txt {
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 0px 0px skyblue);
+}
+
+#element {
+    color: skyblue;
+    filter: drop-shadow(2px 0px 0px purple);
+}
+
+.header-txt p {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.intro a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid skyblue;
+    padding: 10px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.intro a:hover {
+    transform: scale(1.2x);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: lavender;
+    color: black;
+    transition: .7s;
+    filter: blur(0.2px);
+}
+
+.intro p {
+    color: lavender;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 690px;    
+}
+
+.intro b {
+    font-weight: 900;
+}
+
+.name {
+    color: rgb(0, 150, 235);
+}
+
+/* about section implementation */
+
+#about {
+    padding: 20px 0;
+    color: White;
+    margin-top: 12px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 35%;
+}
+
+.col-1 img {
+    width: 100%;
+    height: 670px;
+    border-radius: 50px;
+}
+
+.col-2 {
+    flex-basis: 60%;
+}
+
+.col-2 h1 {
+    font-size: 60px;
+    color: rgb(0, 150, 235);
+    filter: drop-shadow(2px 0px 0px skyblue);
+}
+
+.col-2 p {
+    font-size: 14px;
+    color: lavender;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-titles p {
+    font-size: 16px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding: 2px;
+    border-radius: 20px;
+    margin-top: 20px;
+    line-height: 1;
+    border-radius: 12px;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-links:hover {
+    color: skyblue;
+}
+
+.tab-contents ul li {
+    font-size: 12px;
+}
+
+.tab-contents ul li span {
+    color: rgb(0, 150, 235);
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    Display: block;
+}
+
+.link {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: skyblue;
+}
+
+/* services section implementation */
+
+#services {
+    padding: 10px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+.services-list div {
+    margin-top: 10px;
+    background: #262626;
+    padding: 35px;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 20px;
+    font-weight: 750;
+    margin-bottom: 15px;
+}
+
+.services-list div p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.services-list div:hover {
+    background: rgb(0, 150, 235);
+    transform: translateY(-10px);
+}
+
+.sub-title {
+    font-size: 60px;
+    color: rgb(0, 150, 235);
+    filter: drop-shadow(2px 0px 0px skyblue);
+}
+
+/* projects section implementation */
+
+#projects {
+    padding: 10px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 40px;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px skyblue;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image img{
+    width: 100%;
+    height: 25vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
+.description a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid skyblue;
+    padding: 10px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.description a:hover {
+    transform: scale(1.2x);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: lavender;
+    color: black;
+    transition: .7s;
+    filter: blur(0.2px);
+}
+
+/* contacts section implementation */
+
+#contact {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contact-left {
+    flex-basis: 60%
+}
+
+.contact-right {
+    flex-basis: 40%;
+}
+
+.contact-right p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-right p i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.contact-icons p i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact-icons p {
+    font-size: 14px;
+}
+
+.follow {
+    font-size: 20px;
+    color: skyblue;
+    filter: drop-shadow(2px 0px 0px rgb(0, 150, 235));
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: lavender;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: skyblue;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid skyblue;
+    padding: 10px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.button:hover {
+    transform: scale(1.2x);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: lavender;
+    color: black;
+    transition: .7s;
+    filter: blur(0.2px);
+}
+
+.contact-left form {
+    width: 90%;
+}
+
+form input, form textarea {
+    width: 100%;
+    bottom: 0;
+    outline: none;
+    background: #262626;
+    padding: 7px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+form .button {
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* footer section implementation */
+
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a{
+    color: rgb(0, 150, 235);
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
