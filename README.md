@@ -1,7 +1,7 @@
 
 # CodSoft Internship Tasks Repository
 
-This repository showcases the outcomes of my web development internship at Codsoft. 
+This repository showcases the outcomes of my web development internship at [Codsoft](https://www.linkedin.com/company/codsoft/). 
 
 During my time at CodSoft, I had the opportunity to dive deep into the world of web development, learning hands-on skills through challenging projects that have expanded my horizons. 
 
